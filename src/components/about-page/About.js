@@ -13,7 +13,7 @@ class About extends Component {
                         text
                     </div>
                     <div classNAme="col-md-4">
-                        pic 
+                        picture
                     </div>
                 </div>
             </div>
