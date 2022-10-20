@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import styles from '../../assets/Main.css';
 
-
-
 class About extends Component {
 
     render() {
