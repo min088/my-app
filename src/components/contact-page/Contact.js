@@ -29,7 +29,7 @@ class Contact extends Component {
                 <div className="contact-parent">
                     <div className="title-container">
                         <div className="main-title">
-                            <span>Contact</span>
+                            <span style={{color: '#fff'}}>Contact</span>
                         </div>
                         <div className="sub-title">
                             <span>Have a question or want to work together?</span>
