@@ -2,28 +2,320 @@
  * Global styles
  ***********************/
 
-a {
-  color: #012e40 !important;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
 .container {
-  max-width: 1124px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0;
+}
+.aboutme-parent {
+  max-width: 1000px;
+  width: 80%;
+}
+.experience-parent {
+  max-width: 1000px;
+  width: 100%;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 50px;
+}
+.main-title > span {
+  font-size: 32px;
+  color: #1f2235;
+  font-weight: 600;
+}
+.sub-title {
+  margin: 8px 0;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: #1f2235;
+}
+.title-seperator {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 180px;
+  margin: 10px 0 0 0;
+}
+.title-seperator .line {
+  width: 80%;
+  height: 3px;
+  background-color: #a9a9a9;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.title-seperator .point {
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.title-seperator .point > div {
+  width: 35px;
+  border-radius: 10px;
+  background-color: #caebf2;
+}
+.aboutme-body {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  box-shadow: 0 0px 20px -2px #1f2235;
+}
+.text-container > p {
+  word-spacing: -0.5px;
+  font-size: 14px;
+}
+.aboutme-body .image-container {
+  width: 50%;
+  background-image: url("../../public/profile3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aboutme-body .text-container {
+  width: 50%;
+  text-align: left;
+  padding: 40px 30px;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  list-style: none;
+  padding-left: 0;
+}
+.skills-list > li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.skills-list > li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: #f44042;
+  line-height: 19px;
+}
+
+/* experience */
+.experience-body {
+  display: flex;
+  width: 1000px;
+  height: 360px;
+}
+.experience-tabs {
+  height: 100%;
+  width: 25%;
+  box-shadow: 15px 0 9px -15px #1f223538;
+}
+.experience-tabs > ul {
+  list-style: none;
+  margin: 10px 0;
+}
+.experience-tabs > ul > li {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 0 8px;
+  border-radius: 20px;
+  transition: width 0.6s ease;
+  font-weight: 600;
+}
+.experience-tabs .active {
+  color: #f44042;
+}
+.experience-details {
+  flex-grow: 1;
+  padding-left: 80px;
+  width: 75%;
+  overflow: hidden;
+}
+.experience-details .detail {
+  display: none;
+  margin: 10px 0;
+}
+.experience-details .active {
+  display: block;
+}
+.experience-details .title {
+  color: #f44042;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.experience-details .title > span {
+  color: #1f2235;
+  font-size: 15px;
+}
+.experience-details .range {
+  color: #565656;
+  font-size: 13px;
+}
+.experience-details .description > ul > li {
+  padding: 5px;
+  position: relative;
+  list-style: none;
+}
+.experience-details .description > ul > li::before {
+  content: "▹";
+  position: absolute;
+  left: -20px;
+  color: #f44042;
+  font-size: 13px;
+  line-height: 23px;
+}
+
+/* contact */
+.contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 120px 0 0;
+  background-color: #565656;
+}
+.contact-parent {
+  max-width: 1000px;
+  width: 80%;
+}
+.contact-body {
+  max-width: 1100px;
+  padding: 10px;
+  display: flex;
+  box-shadow: 0 0px 20px -2px #1f2235;
+  border-radius: 12px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #565656;
+}
+.contact-container .title-container {
+  margin: 50px 0;
+}
+.contact-container .main-title {
+  color: #fff;
+}
+.contact-container .sub-title {
+  color: #f44042;
+  font-weight: 500;
+}
+.contact-form {
+  padding: 0 20% 80px;
+  margin: 0 auto;
+  min-width: 500px;
+  max-width: 950px;
+  display: block;
+}
+.contact-form > textarea {
+  width: 100%;
+  height: 180px;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 0;
+  font-size: 13px;
+  background-color: #ffffffad;
+}
+.contact-form > input {
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 3px;
+  border: 0;
+  font-size: 13px;
+  background-color: #ffffffad;
+}
+.button {
+  width: 100%;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 3px;
+  border: 0;
+  font-size: 13px;
+  background-color: #ffffffad;
+}
+
+/* footer */
+.footer-container {
+  background-color: #303336;
+  padding: 70px 0 50px 0;
+  position: relative;
+}
+.to-top {
+  position: absolute;
+  cursor: pointer;
+  background-color: #f44042;
+  height: 50px;
+  width: 50px;
+  margin: 0 auto;
+  padding: 12px 0;
+  left: 0;
+  right: 0;
+  top: -25px;
+  transition: background 0.5s;
+  text-align: center;
+}
+.to-top:hover {
+  background-color: #c03133;
+}
+.to-top > a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.to-top > a:hover {
+  color: #fff;
+}
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.icon-container .icon {
+  display: flex;
+  margin: 0 15px;
+}
+.icon > a {
+  color: #caebf2;
+}
+.icon > a:hover {
+  color: #f44042;
+  transform: scale(1.3);
+  transition: 1s ease-out;
+}
+.copyright {
+  display: block;
+  color: #caebf266;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 12px;
+}
+.copyright > span {
+  color: #f4404285;
 }
 
 .nav-text {
   font-family: Prata;
 }
-
+.content-top {
+  font-family: Montserrat;
+  text-align: center;
+  padding-top: 10%;
+}
 .content-left {
   font-family: Montserrat;
   font-weight: 500;
@@ -94,4 +386,16 @@ a:hover {
 @font-face {
   font-family: "Yeseva One";
   src: url("../fonts/YesevaOne-Regular.ttf");
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

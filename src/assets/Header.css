@@ -1,3 +1,43 @@
+.sticky-header {
+  height: 10vh;
+  background-color: #565656;
+  display: block;
+}
+.sticky-header .sticky-inner-wrapper {
+  height: 10vh;
+  background-color: #565656;
+  box-shadow: 0 10px 30px -10px #4b4949;
+}
+.header-parent {
+  display: flex;
+  align-items: center;
+  float: right;
+  padding: 0 25px;
+}
+.header-logo {
+  font-size: 50px;
+  color: #fff;
+  padding: 10px 50px;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+.header-button {
+  padding: 10px 20px;
+  margin: 15px 10px;
+}
+.header-button > a {
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.header-button > a:hover {
+  color: #fff;
+}
+
 .nav-left {
   position: fixed;
   z-index: 600;
