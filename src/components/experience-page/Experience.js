@@ -48,7 +48,11 @@ class Experience extends Component {
                         <div className="experience-details">
                             <div className={this.state.selected === 1 ? 'detail active' : 'detail' }>
                                 <div className="title"> 
-                                    Frontend Developer <span> @ Koriny</span>
+                                    Frontend Developer 
+                                    <span> @ </span> 
+                                    <a href="https://koriny.com/" target="_blank">
+                                        Koriny
+                                    </a>
                                 </div>
                                 <p className="range">Full-time, Aug 2021 - Present</p>
                                 <div className="description">
@@ -76,7 +80,11 @@ class Experience extends Component {
                             </div>
                             <div className={this.state.selected === 3 ? 'detail active' : 'detail' }>
                                 <div className="title"> 
-                                    General Manager <span> @ VH Design Co.</span>
+                                    General Manager 
+                                    <span> @ </span> 
+                                    <a href="https://vintagehollywood.co.kr/" target="_blank">
+                                        VH Design Co.
+                                    </a>
                                 </div>
                                 <p className="range">Full-time, Mar 2010 - Jul 2011</p>
                                 <div className="description">
